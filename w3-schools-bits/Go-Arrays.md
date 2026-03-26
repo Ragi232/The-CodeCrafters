@@ -1,0 +1,3 @@
+## Go Arrays
+
+Arrays are used to store multiple values of the same type in a single variable, instead of declaring separate variables for each value.Arrays in Go are collections of elements of the same type stored in a fixed-size sequence. Think of them as a row of boxes where each box holds a value, and every box is numbered so you can access it.Arrays in Go are fixed-size, same-type collections of elements. They are indexed starting from 0, and you can access, modify, and iterate over them, but their size cannot change once declared.
