@@ -1,0 +1,3 @@
+## Go Data Types
+
+Data type is an important concept in programming. Data type specifies the size and type of variable values.Data types in Go define what kind of data a variable can hold. Every variable or constant in Go has a data type, which tells the compiler how to store, interpret, and manipulate the data.Data types in Go define what kind of values variables can store. They ensure safety, strings, runes, arrays, slices, maps, structs, and pointerse.e.t.c
