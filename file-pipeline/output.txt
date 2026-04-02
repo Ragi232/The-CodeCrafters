@@ -1,7 +1,7 @@
 SENTINEL FIELD REPORT — PROCESSED
 ---------------------------------
-001. ✦ ACTION: fix the breach
-002. [REDACTED]: agent compromised
-003. normal line here
-004. extra spaces here
-005. another normal line
+001. ✦ ACTION: inspect equipment
+002. [REDACTED]: secure transmission
+003. gamma beta alpha REVERSE
+004. three two one REVERSE
+005. normal line without keywords
