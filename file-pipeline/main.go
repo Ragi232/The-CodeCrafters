@@ -41,14 +41,16 @@ func main() {
 
 		line = trim(line)
 
-		line = replaceTODO(line)
-
-		line = replaceClassified(line)
-
 		if shouldRemove(line) {
 			linesRemoved++
 			continue
 		}
+
+		line = replaceTODO(line)
+
+		line = replaceClassified(line)
+
+		line = reverseIfNeeded(line)
 
 		processed = append(processed, line)
 	}
@@ -83,7 +85,7 @@ func main() {
 	fmt.Println("✦ Lines read    :", linesRead)
 	fmt.Println("✦ Lines written :", len(processed))
 	fmt.Println("✦ Lines removed :", linesRemoved)
-	fmt.Println("✦ Rules applied : trim, todo, classified, remove, numbering")
+	fmt.Println("✦ Rules applied : Trim whitespace, Remove blank/dash lines, Replace TODO, Replace CLASSIFIED, Reverse REVERSE lines")
 }
 
 func trim(s string) string {
@@ -106,4 +108,18 @@ func shouldRemove(s string) bool {
 		return true
 	}
 	return false
+}
+
+func reverseIfNeeded(s string) string {
+	if !strings.Contains(s, "REVERSE") {
+		return s
+	}
+
+	words := strings.Fields(s)
+
+	for i, j := 0, len(words)-1; i < j; i, j = i+1, j-1 {
+		words[i], words[j] = words[j], words[i]
+	}
+
+	return strings.Join(words, " ")
 }
