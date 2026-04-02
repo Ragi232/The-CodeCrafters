@@ -1,7 +1,19 @@
 SENTINEL FIELD REPORT — PROCESSED
 ---------------------------------
-001. ✦ ACTION: inspect equipment
-002. [REDACTED]: secure transmission
-003. gamma beta alpha REVERSE
-004. three two one REVERSE
-005. normal line without keywords
+001. ALERT LEVEL FIVE DETECTED IN NORTHERN SECTOR
+002. todo: confirm coordinates with agent bulus
+003. [REDACTED]: target has been relocated
+004. the perimeter was breached at 03:47 local time
+005. extra spaces were not cleaned before logging
+006. [REDACTED]: secondary site compromised
+007. normal report line with no issues
+008. ✦ ACTION: send backup to eastern checkpoint
+009. EVERYTHING WAS FINE UNTIL IT WASN'T
+010. another normal line from the field
+011. classified: the director has been briefed
+012. SHORT LINE
+013. treatment special gets it so it in REVERSE word the contains line this
+014. 1234 @@##$$%% anomaly detected at sector 9
+015. mission logs incomplete and require review
+016. order flip should sentence entire this REVERSE
+017. final observation logged before blackout
