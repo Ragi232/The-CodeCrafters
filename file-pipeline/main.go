@@ -47,16 +47,10 @@ func main() {
 		}
 
 		line = replaceTODO(line)
-
 		line = replaceClassified(line)
-
 		line = reverseIfNeeded(line)
 
 		processed = append(processed, line)
-	}
-
-	for i := range processed {
-		processed[i] = fmt.Sprintf("%03d. %s", i+1, processed[i])
 	}
 
 	out, err := os.Create(outFile)
@@ -69,10 +63,8 @@ func main() {
 	writer := bufio.NewWriter(out)
 
 	writer.WriteString("SENTINEL FIELD REPORT — PROCESSED\n")
-	writer.WriteString("---------------------------------\n")
-
-	for _, line := range processed {
-		writer.WriteString(line + "\n")
+	for i, line := range processed {
+		writer.WriteString(fmt.Sprintf("%03d. %s\n", i+1, line))
 	}
 
 	writer.Flush()
@@ -92,12 +84,20 @@ func trim(s string) string {
 	return strings.TrimSpace(s)
 }
 
+// Only replace uppercase TODO:, preserve lowercase todo:
 func replaceTODO(s string) string {
-	return strings.ReplaceAll(s, "TODO:", "✦ ACTION:")
+	if strings.HasPrefix(s, "TODO:") {
+		return strings.Replace(s, "TODO:", "✦ ACTION:", 1)
+	}
+	return s
 }
 
+// Only replace uppercase CLASSIFIED:, preserve lowercase classified:
 func replaceClassified(s string) string {
-	return strings.ReplaceAll(s, "CLASSIFIED:", "[REDACTED]:")
+	if strings.HasPrefix(s, "CLASSIFIED:") {
+		return strings.Replace(s, "CLASSIFIED:", "[REDACTED]:", 1)
+	}
+	return s
 }
 
 func shouldRemove(s string) bool {
