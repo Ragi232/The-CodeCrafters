@@ -1,7 +1,34 @@
-   TODO: inspect equipment   
-CLASSIFIED: secure transmission
-REVERSE alpha beta gamma
-   REVERSE one two three   
-     
------
-normal line without keywords
+   ALERT LEVEL FIVE DETECTED IN NORTHERN SECTOR   
+
+todo: confirm coordinates with agent bulus
+CLASSIFIED: target has been relocated
+
+-----------------------------------------------
+
+the perimeter was breached at 03:47 local time
+   extra spaces were not cleaned before logging    
+
+CLASSIFIED: secondary site compromised
+normal report line with no issues
+
+TODO: send backup to eastern checkpoint
+
+EVERYTHING WAS FINE UNTIL IT WASN'T
+
+another normal line from the field
+
+classified: the director has been briefed
+
+SHORT LINE
+
+this line contains the word REVERSE in it so it gets special treatment
+
+1234 @@##$$%% anomaly detected at sector 9
+
+     mission logs incomplete and require review     
+
+----------------------------
+
+REVERSE this entire sentence should flip order
+
+final observation logged before blackout
